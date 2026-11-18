@@ -1,6 +1,11 @@
 # Computational Geometry Algorithms in Python
 
-Implementations, benchmarks and visualizations of classic computational-geometry algorithms: **convex hulls, linear programming, Delaunay triangulation and KD-trees**. Everything is in one Jupyter notebook: [`computational_geometry.ipynb`](computational_geometry.ipynb).
+Implementations, benchmarks and visualizations of classic computational-geometry algorithms: **convex hulls, linear programming, Delaunay triangulation and KD-trees**.
+
+| Notebook | Contents |
+|---|---|
+| [`computational_geometry.ipynb`](computational_geometry.ipynb) | My notebook, described section by section below |
+| [`team-presentation/presentation.ipynb`](team-presentation/presentation.ipynb) | Presentation notebook written with Fotios Iasonas Oikonomopoulos (see [below](#team-presentation)) |
 
 > *Computational Geometry* course (Dept. of Informatics & Telecommunications, University of Athens, Fall 2025).
 
@@ -37,15 +42,26 @@ Builds a 2D **KD-tree** recursively (median split, alternating axes) and draws t
 
 ![KD-tree range search](images/kd_tree_range_search.png)
 
+## Team presentation
+
+[`team-presentation/presentation.ipynb`](team-presentation/presentation.ipynb), written together with **Fotios Iasonas Oikonomopoulos**, is a presentation-style notebook. Each algorithm has its own cell, followed by commentary (in Greek) on its complexity and results. It covers:
+
+- 2D convex hull with **Graham's scan, gift wrapping, divide & conquer and QuickHull**, plus a runtime comparison on the same random point sets ([results table](team-presentation/images/results_table.png))
+- **3D QuickHull**
+- **Linear programming**
+- **Delaunay triangulation** via lifting to a paraboloid
+- **KD-tree** construction and orthogonal range search
+
 ## Running
 
 ```bash
 pip install numpy scipy matplotlib jupyter
-jupyter notebook computational_geometry.ipynb
+jupyter notebook
 ```
 
 **Tech:** Python · NumPy · SciPy · Matplotlib · Jupyter
 
-## Author
+## Authors
 
-**Giorgos Fragkakis** · [GitHub](https://github.com/fragk17)
+- **Giorgos Fragkakis** · [GitHub](https://github.com/fragk17)
+- **Fotios Iasonas Oikonomopoulos** (co-author of the team presentation) · [GitHub](https://github.com/sdi2100125)
